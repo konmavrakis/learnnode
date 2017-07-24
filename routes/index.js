@@ -3,10 +3,14 @@ const router = express.Router();
 
 // Do work here
 router.get('/', (req, res) => {
-	const ntinos = {name: ntinos, age: 1234, node: true};
+	//const ntinos = {name: 'ntinos', age: 1234, node: true};
 	//res.json(ntinos);
 	//res.send(req.query.name);
-	res.json(req.query);
+	//res.json(req.query);
+	res.render('hello', {
+		what: 'Coming',
+		when: 'Soon'
+	});
 
 });
 
